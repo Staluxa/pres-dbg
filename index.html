@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Moder debugging</title>
+    <title>Modern debugging</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/shower-ribbon/styles/styles.css">
@@ -9,18 +10,22 @@
         .shower {
             --slide-ratio: calc(16 / 9);
         }
+
         .slide.screenshot {
             padding-top: 40px;
         }
+
         .slide.screenshot .place {
             margin-top: 20px;
             width: 80%;
         }
+
         .slide.black::after {
             visibility: hidden;
         }
     </style>
 </head>
+
 <body class="shower list">
 
     <header class="caption">
@@ -30,7 +35,7 @@
 
     <section class="slide black" id="cover">
         <h2 class="shout">
-            Modern <br/> debugging
+            Modern <br /> debugging
         </h2>
         <figure>
             <img class="cover width" src="pictures/logo.jpeg" alt="Laptop with glasses">
@@ -44,6 +49,7 @@
                 color: #fff;
                 top: 30%;
             }
+
             #cover p a {
                 color: white;
             }
@@ -53,61 +59,43 @@
     <section class="slide">
         <h2>Pretty me</h2>
         <p>BIO</p>
-        <p>Configurator description</p>
     </section>
 
     <section class="slide black">
         <a href="https://www.mozilla.org/en-US/firefox/developer/">
-            <img class="cover height" src="pictures/firefox.png" alt="Firefox quantum logo">
+            <img class="cover height" src="pictures/firefox.png" alt="Firefox nightly logo">
         </a>
     </section>
 
-    <section class="slide black">
-        <video class="cover height" autoplay loop>
-            <source src="pictures/firefox-layout.webm" type="video/webm">
-            <source src="pictures/firefox-layout.mp4" type="video/mp4">
-        </video>
+    <section class="slide">
+        <h2>Main advantages</h2>
+        <ul>
+            <li>A11y inspector</li>
+            <li>Layout tools</li>
+            <li>Fonts editing</li>
+        </ul>
     </section>
 
-    <section class="slide black">
-        <video class="cover height" autoplay loop>
-            <source src="pictures/firefox-events.webm" type="video/webm">
-            <source src="pictures/firefox-events.mp4" type="video/mp4">
-        </video>
+    <section class="slide">
+        <img class="cover height" src="pictures/firefox-a11y.png" alt="Accessibility devtools screenshot">
     </section>
 
-    <section class="slide black">
-        <video class="cover height" autoplay loop>
-            <source src="pictures/firefox-a11y.webm" type="video/webm">
-            <source src="pictures/firefox-a11y.mp4" type="video/mp4">
-        </video>
+    <section class="slide">
+        <img class="cover height" src="pictures/firefox-grid.png" alt="Grid devtools screenshot">
+    </section>
+
+    <section class="slide">
+        <img class="cover height" src="pictures/firefox-flex.png" alt="Flexbox devtools screenshot">
+    </section>
+
+    <section class="slide">
+        <img class="cover height" src="pictures/firefox-fonts.png" alt="Fonts devtools screenshot">
     </section>
 
     <section class="slide black">
         <a href="https://developers.google.com/web/tools/chrome-devtools/javascript/">
             <img class="cover height" src="pictures/chrome.webp" alt="Chrome DevTools 101">
         </a>
-    </section>
-
-    <section class="slide screenshot">
-        <h2>Switcheroo Redirector</h2>
-        <a href="https://chrome.google.com/webstore/detail/switcheroo-redirector/cnmciclhnghalnpfhhleggldniplelbg">
-            <img class="place" src="pictures/switcheroo.png" alt="Screenshot of switcheroo redirector">
-        </a>
-    </section>
-
-    <section class="slide black">
-        <video class="cover height" autoplay loop>
-            <source src="pictures/switcheroo-setup.webm" type="video/webm">
-            <source src="pictures/switcheroo-setup.mp4" type="video/mp4">
-        </video>
-    </section>
-
-    <section class="slide black">
-        <video class="cover height" autoplay loop>
-            <source src="pictures/switcheroo-result.webm" type="video/webm">
-            <source src="pictures/switcheroo-result.mp4" type="video/mp4">
-        </video>
     </section>
 
     <section class="slide screenshot">
@@ -118,60 +106,110 @@
     </section>
 
     <section class="slide black">
-        <video class="cover height" autoplay loop>
+        <video class="cover height" controls>
             <source src="pictures/overrides-setup.webm" type="video/webm">
             <source src="pictures/overrides-setup.mp4" type="video/mp4">
         </video>
     </section>
 
     <section class="slide black">
-        <video class="cover height" autoplay loop>
+        <video class="cover height" controls>
+            <!-- Horrible quality, first to rerecord-->
             <source src="pictures/overrides-result.webm" type="video/webm">
             <source src="pictures/overrides-result.mp4" type="video/mp4">
         </video>
     </section>
 
     <section class="slide screenshot">
+        <h2>Switcheroo Redirector</h2>
+        <a href="https://chrome.google.com/webstore/detail/switcheroo-redirector/cnmciclhnghalnpfhhleggldniplelbg">
+            <img class="place" src="pictures/switcheroo.png" alt="Screenshot of switcheroo redirector">
+        </a>
+    </section>
+
+    <section class="slide black">
+        <video class="cover height" controls>
+            <source src="pictures/switcheroo-setup.webm" type="video/webm">
+            <source src="pictures/switcheroo-setup.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="slide screenshot">
         <h2>Blackboxing</h2>
-        <a href="">
-            <img class="place" src="pictures/blackboxing.png" alt="Screenshot of blackboxing enabled">
-        </a>
+        <img class="place" height="390" src="pictures/blackboxing.png" alt="Screenshot of blackboxing enabled">
     </section>
 
     <section class="slide black">
-        <video class="cover height" autoplay loop>
-            <source src="pictures/blackboxing-setup.webm" type="video/webm">
-            <source src="pictures/blackboxing-setup.mp4" type="video/mp4">
+        <video class="cover height" controls>
+            <source src="pictures/blackbox-bug.webm" type="video/webm">
+            <source src="pictures/blackbox-bug.mp4" type="video/mp4">
         </video>
     </section>
 
     <section class="slide black">
-        <video class="cover height" autoplay loop>
-            <source src="pictures/blackboxing-result.webm" type="video/webm">
-            <source src="pictures/blackboxing-result.mp4" type="video/mp4">
+        <video class="cover height" controls>
+            <source src="pictures/blackbox-breakpoint.webm" type="video/webm">
+            <source src="pictures/blackbox-breakpoint.mp4" type="video/mp4">
         </video>
     </section>
 
     <section class="slide black">
-        <a href="https://technet.microsoft.com/en-us/gg589512(v=vs.71)">
-            <img class="cover height" src="pictures/ie.png" alt="Internet Explorer logo">
-        </a>
-    </section>
-
-    <section class="slide black">
-        <a href="https://live.browserstack.com">
-            <img class="cover height" src="pictures/browserstack.png" alt="Browserstack logo">
-        </a>
-    </section>
-
-    <section class="slide black">
-        <video class="cover height" autoplay loop>
-            <source src="pictures/browserstack-result.webm" type="video/webm">
-            <source src="pictures/browserstack-result.mp4" type="video/mp4">
+        <video class="cover height" controls>
+            <source src="pictures/blackbox-result.webm" type="video/webm">
+            <source src="pictures/blackbox-result.mp4" type="video/mp4">
         </video>
     </section>
 
+    <section class="slide">
+        <h2>F12 devtools</h2>
+        <ul>
+            <li>Conditional breakpoints</li>
+            <li>Eager evaluation by hover</li>
+            <li>Watchers</li>
+            <li>Event tracepoints</li>
+        </ul>
+    </section>
 
+    <section class="slide screenshot">
+        <h2>Browserstack</h2>
+        <img class="place" height="390" src="pictures/browserstack.png" alt="Browserstack menu screenshot">
+    </section>
+
+    <section class="slide">
+        <img class="cover height" src="pictures/browserstack-local.png" alt="Browserstack local screenshot">
+    </section>
+
+    <section class="slide">
+        <h2>Custom tools</h2>
+        <ul>
+            <li><b>JS Boorkmarks</b>
+                <span> -
+                    <code>javascript:(function(){ ... }());</code>
+                </span>
+            </li>
+            <li><b>Browser Extensions</b></li>
+            <li><b>Query Params</b></li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <video class="cover width" controls>
+            <source src="pictures/bookmark-js.webm" type="video/webm">
+            <source src="pictures/bookmark-js.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="slide black">
+        <video class="cover width" controls>
+            <source src="pictures/fluid-switcheroo.webm" type="video/webm">
+            <source src="pictures/fluid-switcheroo.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="slide video-small">
+        <h2>QA</h2>
+        <p>happy-person.jpg</p>
+    </section>
 
     <footer class="badge">
         <a href="https://github.com/shower/shower">Fork me on GitHub</a>
@@ -183,4 +221,5 @@
     <!-- Copyright © 2018 Yours Truly, Famous Inc. -->
 
 </body>
+
 </html>
