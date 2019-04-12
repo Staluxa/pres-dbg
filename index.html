@@ -17,6 +17,9 @@
 
         .slide.screenshot .place {
             margin-top: 20px;
+        }
+
+        .place.shrink {
             width: 80%;
         }
 
@@ -53,13 +56,13 @@
 <body class="shower list">
 
     <header class="caption">
-        <h1>Браузерная <br /> отладка</h1>
+        <h1>Современная <br /> отладка</h1>
         <p>Олександр Ковтун</p>
     </header>
 
     <section class="slide black" id="cover">
         <h2 class="shout">
-            Браузерная <br /> отладка
+            Современная  <br /> отладка
         </h2>
         <figure>
             <img class="cover width" src="pictures/logo.jpeg" alt="Картинка с ноутбуком">
@@ -185,7 +188,7 @@
     <section class="slide screenshot">
         <h2>Local Overrides</h2>
         <a href="https://www.youtube.com/watch?v=D1pV7ermy6w&t=26s">
-            <img class="place" src="pictures/overrides.png" alt="Screenshot of local overrides enabled">
+            <img class="place shrink" src="pictures/overrides.png" alt="Скриншот с включенным local overrides">
         </a>
     </section>
 
@@ -198,7 +201,6 @@
 
     <section class="slide black">
         <video class="cover height" controls>
-            <!-- Horrible quality, first to rerecord-->
             <source src="pictures/overrides-result.webm" type="video/webm">
             <source src="pictures/overrides-result.mp4" type="video/mp4">
         </video>
@@ -211,10 +213,13 @@
         </video>
     </section>
 
-    <section class="slide screenshot">
-        <h2>Switcheroo Redirector</h2>
+    <section class="slide clear">
+        <img class="cover height" src="pictures/problem-mini.png" alt="Скриншот с мини кодом">
+    </section>
+
+    <section class="slide clear">
         <a href="https://chrome.google.com/webstore/detail/switcheroo-redirector/cnmciclhnghalnpfhhleggldniplelbg">
-            <img class="place" src="pictures/switcheroo.png" alt="Screenshot of switcheroo redirector">
+            <img class="place cover" src="pictures/switcheroo.png" alt="Скриншот switcheroo redirector">
         </a>
     </section>
 
@@ -225,9 +230,13 @@
         </video>
     </section>
 
+    <section class="slide clear">
+        <img class="cover height" src="pictures/problem-frame.png" alt="Скриншот с оберткой фреймворка">
+    </section>
+
     <section class="slide screenshot">
         <h2>Blackboxing</h2>
-        <img class="place" height="390" src="pictures/blackboxing.png" alt="Screenshot of blackboxing enabled">
+        <img height="390" src="pictures/blackboxing.png" alt="Screenshot of blackboxing enabled">
     </section>
 
     <section class="slide black">
@@ -245,7 +254,7 @@
     </section>
 
     <section class="slide">
-        <h2>
+        <h2 class="link-logo">
             <img src="pictures/ie-logo.png" alt="Логотип Internet Explorer">
             Internet Explorer
         </h2>
@@ -260,8 +269,8 @@
         <h2>Основные преимущества</h2>
     </section>
 
-    <section class="slide">
-        <img class="cover height" src="pictures/nothing.jpg" alt="Картинка пустоты">
+    <section class="slide clear">
+        <img class="cover height" src="pictures/nothing.png" alt="Картинка пустоты">
     </section>
 
     <section class="slide">
@@ -276,7 +285,7 @@
 
     <section class="slide">
         <h2>
-            <a href="https://www.browserstack.com">
+            <a class="link-logo" href="https://www.browserstack.com">
                 <img src="pictures/browserstack-logo.png" alt="Иконка Browserstack">
             </a>
             Браузер, которого у меня нет
@@ -294,17 +303,17 @@
             <li><b>1 пользователь</b> - от 29$ месяц</li>
             <li><b>50 пользователей / 25 соединений</b> - от 999$ месяц</li>
             <li><b>Фриланс пользователь</b> - 12.5$ в месяц</li>
-            <li><b>Опенсорс</b> - бесплатно</li>
+            <li><b>Опенсорс, 5 пользователей / 5 соединений</b> - <a href="https://www.browserstack.com/open-source">бесплатно</a></li>
         </ul>
     </section>
 
     <section class="slide clear">
-        <img class="cover" src="pictures/browserstack.png" alt="Browserstack menu screenshot">
+        <img class="cover" src="pictures/browserstack.png" alt="Скриншот с меню browserstack">
     </section>
 
 
-    <section class="slide">
-        <img class="cover height" src="pictures/browserstack-local.png" alt="Browserstack local screenshot">
+    <section class="slide clear">
+        <img class="cover height" src="pictures/browserstack-local.png" alt="Скриншот с локальной настройкой">
     </section>
 
 
@@ -312,13 +321,9 @@
     <section class="slide">
         <h2>Custom tools</h2>
         <ul>
-            <li><b>JS Boorkmarks</b>
-                <span> -
-                    <code>javascript:(function(){ ... }());</code>
-                </span>
-            </li>
-            <li><b>Browser Extensions</b></li>
-            <li><b>Query Params</b></li>
+            <li><b>Bookmarklets (JS закладки)</b></li>
+            <li><b>Расширения для браузера</b></li>
+            <li><b>Параметры ссылки</b></li>
         </ul>
     </section>
 
@@ -337,8 +342,7 @@
     </section>
 
     <section class="slide video-small">
-        <h2>QA</h2>
-        <p>happy-person.jpg</p>
+        <h2 class="shout">QA</h2>
     </section>
 
     <footer class="badge">
